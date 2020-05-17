@@ -19,7 +19,7 @@ function UnityProgress(unityInstance, progress) {
   }
   //unityInstance.progress.full.style.width = (100 * progress) + "%";
   console.log(progress);
-  unityInstance.progress.style.width = (100 * progress) + "%";
+  unityInstance.progress.style.width = (100 * (progress + 0.1)) + "%";
   if (progress == 1) {
     unityInstance.logo.style.display = "none";
     unityInstance.progress.style.display = "none";
