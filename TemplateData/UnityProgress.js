@@ -18,8 +18,12 @@ function UnityProgress(unityInstance, progress) {
     // unityInstance.container.appendChild(unityInstance.progress);
   }
   //unityInstance.progress.full.style.width = (100 * progress) + "%";
-  console.log(progress);
-  unityInstance.progress.style.width = (100 * (progress + 0.1)) + "%";
+    console.log(progress);
+  if (progress = 0.9) {
+    unityInstance.progress.style.width = (100 * (progress + 0.1)) + "%";
+  } else {
+    unityInstance.progress.style.width = (100 * (progress)) + "%";
+  }
   if (progress == 1) {
     unityInstance.logo.style.display = "none";
     unityInstance.progress.style.display = "none";
